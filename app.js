@@ -34,7 +34,7 @@ app.set('etag', false);
 
 //request size limit :
 app.use(express.json({limit:'200MB'}));
-app.use(express.urlencoded({ extended: true, limit: '200MB' })); // Set `extended` option
+app.use(express.urlencoded({limit:false})); 
 
 
 //Database connection
